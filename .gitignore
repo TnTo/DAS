@@ -1,0 +1,14 @@
+# conan
+conan.lock
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json
+Sconscript_conan
+
+# scons
+test_package/.sconsign.dblite
+test_package/build
+
+# python
+*.pyc
+*.pdb
