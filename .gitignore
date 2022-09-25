@@ -3,11 +3,15 @@ conan.lock
 conanbuildinfo.txt
 conaninfo.txt
 graph_info.json
-Sconscript_conan
+SConscript_conan
 
 # scons
-test_package/.sconsign.dblite
+*/.sconsign.dblite
+build
 test_package/build
+
+# coverage
+coverage
 
 # python
 *.pyc
