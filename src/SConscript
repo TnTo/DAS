@@ -1,6 +1,15 @@
 import sys
 
-env = Environment()
+AddOption('--debug-build', action='store_true', help='debug mode')
+
+env = Environment(CPPPATH=['.'])
+
+env.Append(CXXFLAGS=['-Wall'])
+
+if GetOption('debug_build'):
+    env.Append(CXXFLAGS=['-g', '-ggdb'])
+else:
+    env.Append(CXXFLAGS=['-O2'], LINKFLAGS=['-O2'])
 
 build_path_relative_to_sconstruct = Dir('..').path
 
