@@ -13,7 +13,7 @@ class Pkg(ConanFile):
     description = 'Dreaming of Artificial Societies'
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = {"shared": False, "fPIC": True}
-    exports_sources = 'src/*'
+    exports_sources = ['src/*', 'CMakeLists.txt']
 
     requires = ['Dyno/0.0.1']
 
