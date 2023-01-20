@@ -4,6 +4,9 @@ conanbuildinfo.txt
 conaninfo.txt
 graph_info.json
 SConscript_conan
+*.cmake
+CMakeUserPresets.json
+CMakeCache.txt
 
 # scons
 */.sconsign.dblite
